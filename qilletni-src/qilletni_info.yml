@@ -1,7 +1,8 @@
-name: http
+name: qilletni/http
 version: 1.0.0
 author: Adam Yarris
+description: HTTP client for Qilletni
 native_classes:
   - dev.qilletni.lib.http.Http
 dependencies:
-  - json:1.0.0
+  qilletni/json: 1.0.0
