@@ -5,4 +5,5 @@ description: HTTP client for Qilletni
 native_classes:
   - dev.qilletni.lib.http.Http
 dependencies:
+  qilletni/std: 1.0.0-SNAPSHOT
   qilletni/json: 1.0.0

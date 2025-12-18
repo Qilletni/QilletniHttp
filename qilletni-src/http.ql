@@ -59,6 +59,27 @@ entity HttpRequest {
     }
     
     /**
+     * Creates a new HTTP GET request to be sent with `HttpClient.send()`, without a body nor headers.
+     *
+     * @param[@type string] url       The URL to send the request to
+     * @returns[@type http.HttpRequest] The created request
+     */
+    static fun createGet(url) {
+        return createGet(url, new Map(), new Map())
+    }
+
+    /**
+     * Creates a new HTTP GET request to be sent with `HttpClient.send()`, without a body.
+     *
+     * @param[@type string] url       The URL to send the request to
+     * @param[@type std.Map] headers The headers to send with the request
+     * @returns[@type http.HttpRequest] The created request
+     */
+    static fun createGet(url, headers) {
+        return createGet(url, headers, new Map())
+    }
+
+    /**
      * Creates a new HTTP GET request to be sent with `HttpClient.send()`.
      *
      * @param[@type string] url       The URL to send the request to
