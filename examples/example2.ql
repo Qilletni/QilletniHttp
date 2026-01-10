@@ -1,5 +1,5 @@
 import "http:http.ql"
-import "std:util/util.ql"
+import "std:util/map.ql"
 import "json:json.ql"
 
 HttpClient client = new HttpClient()
